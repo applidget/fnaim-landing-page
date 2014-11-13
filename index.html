@@ -565,6 +565,24 @@
         display:inline-block;
       }
 
+      #logo_h1 a {
+        position:relative;
+        display:block;
+        width:409px;
+        height:150px;
+      }
+
+      #logo_h1 a span {
+        display:block;
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:#ffffff url(https://events-cms.s3.amazonaws.com/uploads/events/54225915fbc32fc61600006a/event_files/document/54340138fbc32fa3180000a3-logocongres3-png/LogoCongres3.png) no-repeat left top;
+        z-index:100; /* Places <span> on top of <a> text */
+        top: 0;
+        left: 0;
+      }
+
 
 
       @media (min-width: 1200px){
@@ -744,16 +762,14 @@
 
         <div id="logo" class="col-md-5">
           <div class="pull-left">
-            <img src="https://events-cms.s3.amazonaws.com/uploads/events/54225915fbc32fc61600006a/event_files/document/54340138fbc32fa3180000a3-logocongres3-png/LogoCongres3.png" alt="Signature congrès Immobilier FNAIM 2014" /></div>
+            <h1 id="logo_h1">
+              <a href="">Congres de l'immobilier de la FNAIM 2014<span></span></a>
+            </h1>
+          </div>
         </div>
 
         <div  class="col-md-3">
-          <!--
-          <div id="language" class="pull-right">
-            <a href="/pages/en/home" target="blank">{{ 'english.png' | image_tag: 'alt:fnaim english' }}</a>
-            <a href="/pages/accueil" target="blank">{{ 'french.png' | image_tag: 'alt:fnaim french' }}</a>
-          </div>
-          -->
+
 
           <div id="social" class="pull-right">
             <a href="http://www.fnaim.fr/" target="blank"><img src="https://events-cms.s3.amazonaws.com/uploads/events/54225915fbc32fc61600006a/event_files/document/54225deffbc32f565c00004c-fnaim-website-png/fnaim-website.png" alt="fnaim website" /></a>
@@ -763,38 +779,13 @@
             <a href="https://www.youtube.com/user/FNAIMnews/" target="blank"><img src="https://events-cms.s3.amazonaws.com/uploads/events/54225915fbc32fc61600006a/event_files/document/54339b8ffbc32f565c0000b4-youtube-png/youtube.png" alt="fnaim youtube" /></a>
           </div>
         </div>
-      </div>
 
-      <!--
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
 
-            <li class="active one-line navbar-header-item"><a data-translate=true rel="registration" href="/pages/inscription">INSCRIPTION</a></li>
-            <li class="one-line navbar-header-item"><a data-translate=true rel="program" href="/pages/programme">PROGRAMME</a></li>
-            <li class="two-lines navbar-header-item"><a data-translate=true rel="exhibition" href="/pages/exposants">SALON &amp;<br>EXPOSANTS</a></li>
-            <li class="one-line navbar-header-item"><a data-translate=true rel="international" href="/pages/international">INTERNATIONAL</a></li>
-            <li class="two-lines navbar-header-item"><a data-translate=true rel="transport" href="/pages/transport">TRANSPORT<br />&amp; HEBERGEMENT</a></li>
-            <li class="one-line navbar-header-item"><a data-translate=true rel="practical-information" href="/pages/infos-pratiques">INFOS PRATIQUES</a></li>
-            <li class="two-lines navbar-header-item"><a data-translate=true rel="partners" href="/pages/partenaires">PARTENAIRES<br />FNAIM</a></li>
-
-          </ul>
-        </div>
-      </nav>
-      -->
+      <div style="clear:both;">
 
       <div class="main">
 
-        <h1 style="display:none;">Congres de l'immobilier de la FNAIM 2014</h1>
 
         <a id="linktowebsite" href="http://www.congresdelimmobilierfnaim2014.com/">Cliquez ici pour accéder au site</a>
 
@@ -802,31 +793,6 @@
 
     </div>
 
-    <!--
-
-    <div class="footer">
-      <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-            <ul class="nav navbar-nav">
-              <li style="border-right: #fff solid 1px;"><a data-translate=true rel="contacts" href="/pages/contact">CONTACTS</a></li>
-              <li><a data-translate=true rel="media-center" href="/pages/espace-presse">ESPACE PRESSE</a></li>
-              {% comment %}
-              <li style="border-left: #fff solid 1px;"><a rel="nofollow" data-method="delete" href="/guests/sign_out">SE DECONNECTER</a></li>
-              {% endcomment %}
-              <li class="partners_logo">{{ 'logo-explorimmo.png' | image_tag: 'alt:explorimmo' }}</li>
-              <li class="partners_logo">{{ 'logo-journal-de-l_agence.png' | image_tag: 'alt:journal de lagence' }}</li>
-              <li class="partners_logo" id="partners_logo_square">{{ 'logo-immoweek.png' | image_tag: 'alt:immoweek' }}</li>
-              <li class="partners_logo">{{ 'logo-immomatin.png' | image_tag: 'alt:immomatin' }}</li>
-              <li class="partners_logo">{{ 'logo-mon-immeuble.com.png' | image_tag: 'alt:mon immeuble' }}</li>
-              <li class="partners_logo">{{ 'logo-lavieimmo.png' | image_tag: 'alt:la vie immo' }}</li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    -->
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
